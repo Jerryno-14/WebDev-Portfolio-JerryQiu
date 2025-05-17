@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+h1{
+    color: #552583; /* Lakers purple */
+    text-align: center;
+    font-family: 'Bebas Neue' ;
+    line-height: 0.5;
+    font-size: 60px;
+}
+
+h2 {
+    color: #552583; /* Lakers purple */
+    text-align: center;
+}
+p {
+    font-size: 16px;
+    color: #000;
+}
+ul {
+    list-style-type: square;
+    color: #552583;
+}
+nav ul {
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+    background-color: #552583; 
+}
+nav ul li {
+    /*margin: 0 15px;*/
+}
+nav ul li a {
+    display: block; 
+    color: rgb(252, 243, 73); 
+    text-align: left; 
+    padding: 14px 16px; 
+    text-decoration:#a45ee6 ; 
+} 
+
+
+nav ul li a:hover { 
+    background-color: #602c94; 
+} 
+
+img {
+    width: 300px;
+    height: 200px;
+    border: 3px solid #FDB927;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+button {
+    background-color: #552583;
+    color: #FDB927;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #3d1a6b;
+}
+.image-section {
+    text-align: center;
+    margin: 20px 0;
+}
+.header-container {
+  display: flex;           /* 启用flex布局 */
+  position: relative; 
+  align-items:center;     /* 垂直居中 */
+  justify-content: center; /* 标题和图片分居两侧 */
+  padding-right: 120px;
+}
+.title{
+    align-items:center;
+}
+.text1{
+    width: 600px; /* 或 max-width: 600px; */
+  margin: 0 auto; /* 水平居中 */
+  text-align: left; /* 内容左对齐 */
+}
+
+
+.header-image {
+    position: absolute;
+    right: 5%; /* 贴靠右侧 */
+    width: 100px;           /* 设置图片宽度 */
+    height: auto;           /* 保持宽高比 */
+} 
