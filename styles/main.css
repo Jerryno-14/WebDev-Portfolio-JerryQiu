@@ -122,6 +122,7 @@ p{
     height: 70px;           /* 保持宽高比 */
     border-radius: 50%;
     object-fit: cover;
+    box-sizing: border-box;
 } 
 .div1{              /*文字框*/
     width: 600px;
@@ -138,6 +139,24 @@ p{
     display: flex;
     justify-content: center;
 }
+
+.div3{              /*文字框*/
+    width: 1000px;
+    height: auto;
+    padding: 25px;/*调整文字离边框距离*/
+    border: 1px solid rgb(176, 77, 226);
+    margin: 0 auto;
+    text-align:left; 
+    background-color: #f0d9f3;
+   
+}
+.div4
+{
+    display: flex;
+    padding : 20px;
+    margin-left:100px;
+    
+}
 .profile-section /*自我介绍框的位置*/{
     display: flex;
     flex-direction: column;
@@ -153,3 +172,23 @@ p{
     width: 200px; /* Match your image width or adjust */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     text-align: center;
+}
+
+.image-gallery1{
+    display: flex;
+    justify-content: space-evenly; /* 均匀分布 */
+    align-items: center;
+    gap: 15px; /* 图片间距 */
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.image-gallery img {
+  width: auto; /* 控制每张图片宽度 */
+  height: 400px; /* 保持原始比例 */
+  object-fit: cover; /* 保持图片比例 */
+  border-radius: 8px; /* 可选圆角 */
+  
+}
