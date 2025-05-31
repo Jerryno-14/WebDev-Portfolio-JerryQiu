@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Jerry Qiu</title>
     <link rel="stylesheet" href="styles/main.css">
-    <script src="scripts/app.js"></script>
+    <script src="scripts/app.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
     
 
@@ -103,6 +103,23 @@
         <button onclick="showLakersSlogan()">m3</menu></button>
         <p style="color: blueviolet;">Thank you for viewing my website</p>
     </footer>
-    <script src="script.js"></script>
+    
+    
+    <!-- 修改无障碍工具栏 -->
+    <div class="accessibility-toolbar">
+        <button id="speak-btn" aria-label="Read content" title="Read page content">
+            <i class="fas fa-volume-up"></i> Read
+        </button>
+        <button id="stop-speak-btn" aria-label="Stop reading" title="Stop reading">
+            <i class="fas fa-stop"></i> Stop
+        </button>
+        <div class="rate-control">
+            <button id="slowDownBtn" aria-label="Slow down">-</button>
+            <span id="rateDisplay">1.0x</span>
+            <button id="speedUpBtn" aria-label="Speed up">+</button>
+        </div>
+    </div>
+
+
 </body>
 </html>
