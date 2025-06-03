@@ -2,6 +2,12 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     
+    if (!('speechSynthesis' in window)) {
+        console.log('Speech synthesis not supported');
+        document.getElementById('speak-btn').disabled = true;
+        document.getElementById('stop-speak-btn').disabled = true;
+        return;
+    }
 
     const synth = window.speechSynthesis;
     let currentUtterance = null;
@@ -63,3 +69,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+  let countNum = 0;
+  function count() {
+    countNum++;
+    document.getElementById("counter").innerHTML = countNum;
+  }

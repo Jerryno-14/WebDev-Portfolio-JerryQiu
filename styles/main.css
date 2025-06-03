@@ -95,7 +95,7 @@ button:hover {
 .header-container {
     display: flex;           /* using flex arrangement */
     position: relative; 
-    align-items:center;     /* 垂直居中 */
+    align-items:center;    
     justify-content: center; /* horizontally seperate the title and pic  */
     padding-right: 120px;
     background: linear-gradient(to right, #552583, #3d1a6b); /* Lakers purple gradient */
@@ -108,8 +108,8 @@ button:hover {
 }
 .text1{
     width: 600px; 
-    margin: 0 auto; /* 水平居中 */
-    text-align: left; /* 内容左对齐 */
+    margin: 0 auto; 
+    text-align: left; 
 }
 
 p{
